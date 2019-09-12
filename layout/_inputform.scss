@@ -1,0 +1,158 @@
+.getintouch {
+    background-image: url(backgrounds/Rectangle77.jpg);
+    background-size: cover; 
+    width: 100%; 
+    .inputform__head {
+        @include head-mixin($color-head: #FFFFFF);
+        padding: 92px 0 0px 0; 
+    }
+ 
+}
+.getintouch__inform {
+    display: flex;
+    justify-content: center;
+    padding: 79px 0 98px 0; 
+    flex-wrap: wrap; 
+} 
+.inputform__inform {
+    width: 540px;
+    color: white;
+    font-family: $second-family;
+    font-size: 14px;
+    margin: 0 28px 0 0;
+    h2 {
+        font-family: $second-family;
+        margin: 0 0 0 0;
+        font-size: 72px;
+        font-weight: lighter;
+        &::first-letter {
+            color: $base-color;
+        }
+        margin-bottom: 7px;     
+    }
+    span {
+        font-size: 19.5px
+    }
+    
+    .inputform__inform--title {
+        color: $base-color;
+    }
+    div {
+        margin: 0 0 13px 0;
+        span {
+            font-size: 14px;
+        }
+    }
+    p {
+        margin-bottom: 33px;
+    }
+    .inputform__inform--links {
+        display: flex;
+        div {
+            margin: 0 9px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 28px;
+            width: 28px;
+            border: 1px solid white;
+                &:hover {
+                    background: $base-color;
+                    border: 1px solid $base-color;
+                }
+            i {
+                color: white;
+                font-size: 20px;
+            }
+            
+        }
+    } 
+}
+.inputform__select {
+    width: 540px;
+
+} 
+.inputform__select--input {
+    display: flex;
+    input {
+        margin: 0 30px 30px 0;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        height: 46px;
+        width: 250px;
+        &::-webkit-input-placeholder {
+            color: white;
+            padding-left: 15px;
+            font-size: 18px;
+            font-weight: 100;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $base-color;
+            &::-webkit-input-placeholder {
+                color: $base-color;
+            }
+        }
+        
+    }
+} 
+.inputform__select--massage {
+    textarea {
+        resize: none;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        height: 113px;
+        width: 533px;   
+        &::-webkit-input-placeholder {
+            color: white;
+            padding: 10px 0 0 15px;
+            font-size: 18px;
+            font-weight: 100;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $base-color;
+            &::-webkit-input-placeholder {
+                color: $base-color;
+            }
+        }
+    }
+}
+.inputform__select--submit {
+    input {
+        height: 50px;
+        width: 151px;
+        color: white;
+        background: none;
+        border: 1px solid white;
+        margin-top: 27px;
+        font-size: 18px;
+        font-weight: 100;
+        &:hover {
+            background-color: $base-color;
+            border: 1px solid $base-color;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .inputform__select {
+        width: 280px; 
+    }
+    .inputform__select--input input {
+        height: 26px;
+        width: 120px; 
+    }
+    .inputform__select--massage textarea {
+        height: 113px;
+        width: 270px; 
+    }
+    .inputform__inform {
+        width: 280px;
+    }
+} 
+  

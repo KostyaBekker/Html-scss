@@ -1,0 +1,22 @@
+.ourpartner {
+    background-color: $backgraund-partner;
+
+    .ourpartner__head {
+        @include  head-mixin;
+        padding: 90px 0 79px 0;
+         
+    }
+    .ourpartner__logo { 
+        display: flex;
+        justify-content: center;
+        padding-bottom: 81px; 
+        flex-wrap: wrap; 
+        a {
+        @include flex-center;
+        width: 253px;
+        height: 147px;
+        border: 1px solid #1BBC9B;
+        margin: 0 19px 10px 11px; 
+        }
+    }
+}

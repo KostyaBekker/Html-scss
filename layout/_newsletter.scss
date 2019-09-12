@@ -1,0 +1,70 @@
+.newsletter {
+    background-image: url(backgrounds/Rectangle57.jpg);
+    background-size: cover;
+    height: 462px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.newsletter_follow {
+    color: white;
+    font-size: 15px;
+    font-family: $base-family;
+    margin: 0px 0 42px 0;
+    &:hover {
+        color: darken(white, 20%)
+    }
+    
+
+}
+.newsletter__emal {
+    height: 60px;
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0px 0 41px 0;
+    input {
+        border: none;
+        color: #555252;
+        font-size: 16px;
+        font-family: $base-family;
+        margin-left: 10px;
+        height: 46px;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }   
+    }
+    .newsletter__emal--forvard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        width: 100px;
+        background-color: #4ec6ab;
+        border-radius: 0 5px 5px 0;
+        margin-right: 2px;
+        i {
+            color: white;
+            font-size: 30px;
+            
+            
+        }
+    }
+}
+.newsletter__head {
+    @include  head-mixin($hr-color: white);
+    margin: 0px 0 26px 0;
+    
+} 
+@media screen and (max-width: 640px) {
+    .newsletter__emal {
+        width: 310px;  
+    } 
+} 

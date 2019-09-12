@@ -1,0 +1,31 @@
+.sale {
+    background-image: url(backgrounds/sale.jpg);
+    background-size: cover;
+    height: 401px;
+    width: 100%;
+    @include flex-center;
+    div {
+        text-align: center;
+        color: white;
+        font-family: $base-family;
+
+        h2 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0 0 0 0;
+        }
+        h3 {
+            font-size: 36px;
+            margin: 0 0 0 0;
+            font-weight: 100;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .sale div h2 {
+        font-size: 35px;
+    }
+    .sale div h3 {
+        font-size: 20px; 
+    }
+}

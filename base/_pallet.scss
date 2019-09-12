@@ -1,0 +1,18 @@
+$main-theme-palet: (
+    color-mountain-meadow: #1BBC9B,
+    color-emperor: #515151,
+    color-white: #FFFFFF,
+    color-selago: #E9EFFD,
+    color-mine-shaft: #323232
+);
+
+
+$base-color: map-get($main-theme-palet, color-mountain-meadow);
+$headline: map-get($main-theme-palet, color-emperor);
+$footer-text: map-get($main-theme-palet, color-white);
+$backgraund-product: map-get($main-theme-palet, color-selago);
+$backgraund-text-product: map-get($main-theme-palet, color-mine-shaft);
+$backgraund-partner: map-get($main-theme-palet, color-selago);
+
+
+

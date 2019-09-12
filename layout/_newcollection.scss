@@ -1,0 +1,190 @@
+.newcollection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $backgraund-product;
+}
+.newcollection__head  { 
+    @include head-mixin;
+    margin-top: 93px;
+}
+.newcollection__product {
+    margin: 77px 0 99px 0; 
+    .newcollection__product--img1, .newcollection__product--img2, 
+    .newcollection__product--img3, .newcollection__product--img4  {
+        background-size: cover;
+        height: 322px; 
+        width: 255px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 15px 15px 15px; 
+        
+        &:hover {
+            .description--name {
+                background-color: $base-color;
+            }
+            .description--cost {
+                background-color: lighten($base-color, 30%);
+            }
+            .newcollection__product--hover {
+                display: flex;
+            } 
+        }
+    }   
+}
+.newcollection__product--hover {
+    height: 88%;
+    width: 100%;
+    background-color: rgba(19, 18, 18, 0.49);
+    outline: solid 10px rgba(253, 253, 253, 0.7);
+    outline-offset: -10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    a {
+        background: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+    a:hover {
+        background: $base-color;
+    }
+    .newcollection__product--select {
+        i {
+            color: white;
+            font-size: 28px;
+        }
+        span {
+            color: white;
+            font-family: $base-family;
+            font-size: 15px;
+            margin-left: 18px;
+        }
+    } 
+    .newcollection__product--select1 {
+        display: flex;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 49px;
+            width: 49px;
+            margin: 0 7px 0 0px;
+            border: 1px solid white;
+        }
+    } 
+    .newcollection__product--select2 {
+        background-color: $backgraund-text-product;
+        border: 1px solid white;
+        height: 49px;
+        width: 165px;
+        margin-top: 6px;
+        a {
+            display: flex; 
+            justify-content: center;
+            align-items: center;  
+        }
+    }
+} 
+.newcollection__product--img1 {
+    background-image: url(image/Rectangle1.png);
+}
+.newcollection__product--img2 {
+    background-image: url(image/Rectangle2.png);
+}
+.newcollection__product--img3 {
+    background-image: url(image/Rectangle3.jpg);
+}
+.newcollection__product--img4 {
+    background-image: url(image/Rectangle4.jpg);
+}
+.newcollection__product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+.newcollection__product--description {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+    .description--name {
+        background-color: $backgraund-text-product;
+        width: 200px;
+        display: flex;
+        padding-left: 12px;
+        align-items: center;
+    }
+    .description--cost {
+        background-color: lighten($backgraund-text-product, 30%);
+        width: 55px;
+        @include flex-center;
+    }
+    span {
+        font-size: 18px;
+        font-family: $second-family;
+        color: white;
+        font-weight: bold;
+    }
+}
+.newcollection__product--mobile {
+    display: none;
+    a {
+        background: none;
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+    .newcollection__product--select {
+        margin: 0 0 15px 0;
+        i {
+            color: white;
+            font-size: 28px;
+        }
+        span {
+            color: white;
+            font-size: 15px;
+            margin-left: 18px;
+        }
+    } 
+    .newcollection__product--select1 {
+        display: flex;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 49px;
+            width: 49px;
+            margin: 0 7px 0 0px;
+            border: 1px solid white;
+            background-color: $base-color;
+        }
+    } 
+    .newcollection__product--select2 {
+        border: 1px solid white;
+        height: 49px;
+        width: 165px; 
+        margin-top: 6px;
+        a {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            background-color: $base-color;  
+        }
+    }
+}
+.newcollection__product--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width: 768px) {
+    .newcollection__product--mobile {
+        display: block; 
+    } 
+}
+

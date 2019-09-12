@@ -1,0 +1,43 @@
+@import "abstracts/_mixins.scss";                 
+@import "base/_pallet.scss"; 
+@import "base/_fonts.scss"; 
+@import "layout/_header.scss";
+@import "layout/_slider.scss";  
+@import "layout/_main.scss"; 
+@import "layout/_newcollection.scss";   
+@import "layout/_newsletter.scss";
+@import "layout/_customerreview.scss";
+@import "layout/_featuredproducts.scss";
+@import "layout/_ourpartner.scss";   
+@import "layout/_sale.scss";
+@import "layout/_bestsellers.scss";   
+@import "layout/_latestnews.scss";
+@import "layout/_inputform.scss"; 
+@import "layout/_footer.scss";
+                                                               
+                                                                                                                                                                                 
+li {                
+    list-style-type: none;  
+    margin: 0;     
+    padding: 0;       
+}    
+ul {             
+    padding: 0;   
+} 
+a {     
+    text-decoration: none;
+} 
+body {
+    display: flex;
+    justify-content: center;
+}
+.page {
+    width: 1600px;     
+} 
+
+ 
+
+
+             
+   
+
